@@ -44,7 +44,7 @@ case "$1" in
         echo "wait for $delaySeconds s"
         sleep $delaySeconds
         echo "start ..."
-        nohup java -jar lib/$jarName
+        nohup java -jar lib/$jarName &
         exit $?
         ;;
   stop)
